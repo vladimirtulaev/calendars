@@ -1,3 +1,6 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//hasseg.org//icalBuddy 1.10.2//EN
 
 USAGE: icalBuddy [options] <command>
 
@@ -54,3 +57,4 @@ Version 1.10.1
 Originally by Ali Rantakari, Copyright 2008-2012 http://hasseg.org/icalBuddy
 Now maintained by the community
 
+END:VCALENDAR
