@@ -1,0 +1,56 @@
+
+USAGE: icalBuddy [options] <command>
+
+<command> specifies the general action icalBuddy should take:
+
+  'eventsToday'      Print events occurring today
+  'eventsToday+NUM'  Print events occurring between today and NUM days into
+                     the future
+  'eventsNow'        Print events occurring at present time
+  'eventsFrom:START to:END'
+                     Print events occurring between the two specified dates
+  'uncompletedTasks' Print uncompleted tasks
+  'undatedUncompletedTasks'
+                     Print uncompleted tasks that have no due date
+  'tasksDueBefore:DATE'
+                     Print uncompleted tasks that are due before the given
+                     date, which can be 'today+NUM' or any regular date
+  'calendars'        Print all calendars
+  'strEncodings'     Print all the possible string encodings
+  'editConfig'       Open the configuration file for editing in a GUI editor
+  'editConfigCLI'    Open the configuration file for editing in a CLI editor
+
+Some of the [options] you can use are:
+
+-V          Print version number (no <command> needed)
+-u          Check for updates to self online (no <command> needed)
+-sc,-sd,-sp Separate by calendar, date or priority
+-f          Format output
+-nc         No calendar names
+-nrd        No relative dates
+-npn        No property names
+-n          Include only events from now on
+-sed        Show empty dates
+-uid        Show event/task UIDs
+-eed        Exclude end datetimes
+-ea         Exclude all-day events
+-li         Limit items (value required)
+-std,-stda  Sort tasks by due date (stda = ascending)
+-tf,-df     Set time or date format (value required)
+-po         Set property order (value required)
+-ps         Set property separators (value required)
+-b          Set bullet point (value required)
+-ab         Set alert bullet point (value required)
+-ss         Set section separator (value required)
+-ic,-ec     Include or exclude calendars (value required)
+-iep,-eep   Include or exclude event properties (value required)
+-itp,-etp   Include or exclude task properties (value required)
+-cf,-lf     Set config or localization file path (value required)
+-nnr        Set replacement for newlines within notes (value required)
+
+See the icalBuddy man page for more info.
+
+Version 1.10.1
+Originally by Ali Rantakari, Copyright 2008-2012 http://hasseg.org/icalBuddy
+Now maintained by the community
+
